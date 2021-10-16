@@ -55,7 +55,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 
                 .loginPage("/login").failureUrl("/login?error=true") // fixer la page login
                 
-                .defaultSuccessUrl("/index.html") // page d'accueil après login avec succès
+                .defaultSuccessUrl("/index") // page d'accueil après login avec succès
                 .usernameParameter("email") // paramètres d'authentifications login et password
                 .passwordParameter("password")
                 .and().logout()
